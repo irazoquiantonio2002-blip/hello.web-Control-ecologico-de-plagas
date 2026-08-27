@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Ecológico de Plagas | Fumigación y Desinfección Ecológica</title>
+  <meta name="description" content="Fumigación, desinfección y control de fauna nociva con métodos 100% ecológicos. Protegemos tu hogar o negocio cuidando la salud de tu familia, tu equipo y el medio ambiente.">
+  <meta name="keywords" content="control de plagas, fumigación ecológica, desinfección, sanitización, control de fauna nociva, control de plagas residencial, control de plagas comercial, exterminador ecológico, fumigación sustentable">
+  <meta property="og:title" content="Control Ecológico de Plagas | Fumigación y Desinfección Ecológica">
+  <meta property="og:description" content="Especialistas en fumigación, desinfección y control de fauna nociva con un enfoque ecológico y sostenible, para espacios residenciales y comerciales.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/logo-control-ecologico-plagas.png">
+
+  <!-- Favicon — logotipo real de Control Ecológico de Plagas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon-32.png">
+  <link rel="apple-touch-icon" href="imagenes/favicon-256.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img class="logo-mark" src="imagenes/logo-control-ecologico-plagas-transparente.png" alt="">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Control Ecológico de Plagas — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img class="logo-mark" src="imagenes/logo-control-ecologico-plagas-transparente.png" alt="Logotipo de Control Ecológico de Plagas">
+          </div>
+          <div class="nav-logo-copy">
+            <span>Control Ecológico</span>
+            <span>de Plagas</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué elegirnos</a></li>
+            <li><a href="#ambientes">Especialidades</a></li>
+            <li><a href="#proceso">Nuestro método</a></li>
+            <li><a href="#producto">Fumigación</a></li>
+            <li><a href="#fumigacion-detalle">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Solicitar Cotización
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Por qué elegirnos</a>
+      <a href="#ambientes">Especialidades</a>
+      <a href="#proceso">Nuestro método</a>
+      <a href="#producto">Fumigación</a>
+      <a href="#fumigacion-detalle">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Solicitar Cotización →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Fumigación · Desinfección · Fauna Nociva
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Elimina las plagas,</span></span>
+            <span class="line"><span>no la salud de los tuyos:</span></span>
+            <span class="line"><span class="accent">control 100% ecológico.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            Especialistas en <strong>fumigación, desinfección y control de fauna nociva</strong> con métodos sostenibles y productos de bajo impacto ambiental. Protegemos hogares, restaurantes, oficinas e industrias sin exponer a tu familia, tu equipo o tus clientes a químicos agresivos.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Solicitar Cotización
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-leaf" style="font-size:15px; color:var(--gray);"></i>
+              Ver Especialidades
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Nuestros valores">
+            <div class="trust-item">
+              <i class="fa-solid fa-leaf"></i>
+              Métodos Ecológicos
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-heart"></i>
+              Seguro para tu Familia
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-building-shield"></i>
+              Residencial y Comercial
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              Una plaga no espera…
+              <em> por eso actuamos rápido, seguro y sin dañar tu entorno.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Combinamos técnicas de control ecológico con protocolos de bioseguridad para resolver el problema de raíz, cuidando la salud de las personas, las mascotas y el medio ambiente.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3>Enfoque 100% Ecológico</h3>
+            <p>Utilizamos productos y métodos de bajo impacto ambiental, pensados para tu familia, tus mascotas y tus clientes.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3>Técnicos Capacitados</h3>
+            <p>Personal preparado en manejo seguro de plagas y protocolos de bioseguridad en cada visita a tu espacio.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-building-shield"></i>
+            </div>
+            <h3>Residencial y Comercial</h3>
+            <p>Soluciones a la medida para casas, restaurantes, oficinas, bodegas e industria, sin importar el tamaño del espacio.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <h3>Diagnóstico y Seguimiento</h3>
+            <p>Inspección, tratamiento y evaluación de resultados: un método completo, no solo una fumigación puntual.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Especialidades
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestras Especialidades</div>
+            <h2 class="section-title" id="amb-heading">
+              Un mismo equipo,<br>
+              <span class="gold">tres soluciones para tu espacio</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              De la fumigación a la desinfección y el control de fauna nociva: cubrimos cada frente para mantener tu espacio sano y seguro.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Qué necesita tu espacio?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Fumigación -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="https://images.pexels.com/photos/32055757/pexels-photo-32055757.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Técnico de Control Ecológico de Plagas realizando fumigación profesional con equipo especializado">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(63,163,90,0.15); border-color:rgba(126,217,87,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-spray-can-sparkles" style="color:var(--green-light);"></i>
+              </div>
+              <h3>Fumigación Ecológica</h3>
+              <p>Eliminamos cucarachas, hormigas, chinches, moscas y otros insectos con productos biodegradables y de baja toxicidad.</p>
+              <div class="amb-temp">Especialidad 01 — Control de Insectos</div>
+            </div>
+          </div>
+
+          <!-- Desinfección -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="https://images.pexels.com/photos/4176370/pexels-photo-4176370.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Persona con traje de protección aplicando nebulización desinfectante en un espacio interior">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(46,196,182,0.15); border-color:rgba(46,196,182,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-droplet" style="color:var(--teal);"></i>
+              </div>
+              <h3>Desinfección y Sanitización</h3>
+              <p>Nebulización y sanitización de espacios para eliminar virus, bacterias y hongos, cuidando la salud de quienes los habitan.</p>
+              <div class="amb-temp">Especialidad 02 — Espacios Sanos</div>
+            </div>
+          </div>
+
+          <!-- Control de Fauna Nociva -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="https://images.pexels.com/photos/16851694/pexels-photo-16851694.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Técnico con casco y equipo de protección realizando control de fauna nociva en el exterior de un edificio">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(46,134,222,0.15); border-color:rgba(46,134,222,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-shield-cat" style="color:var(--blue);"></i>
+              </div>
+              <h3>Control de Fauna Nociva</h3>
+              <p>Manejo responsable de roedores, aves y otra fauna nociva, con métodos éticos que evitan daños mayores a tu propiedad.</p>
+              <div class="amb-temp">Especialidad 03 — Fauna Bajo Control</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Nuestro método en 6 etapas, <span class="gold">sin atajos</span>
+          </h2>
+          <p>Del diagnóstico al mantenimiento seguimos el mismo ciclo que inspira nuestro logotipo: inspección, identificación, recomendación, tratamiento, evaluación y mantenimiento.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Inspección e Identificación</h3>
+            <p>Revisamos tu espacio a fondo para identificar el tipo de plaga, su origen y el nivel de afectación antes de actuar.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Recomendación y Tratamiento</h3>
+            <p>Diseñamos un plan de control ecológico a la medida y lo aplicamos con productos seguros y técnicas profesionales.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Evaluación y Mantenimiento</h3>
+            <p>Damos seguimiento a los resultados y, si tu espacio lo requiere, establecemos un programa de mantenimiento periódico.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO DESTACADO — Fumigación Ecológica
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Servicio Destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Fumigación que protege<br>
+              <span class="gold">sin poner en riesgo tu salud</span>
+            </h2>
+            <p class="producto-lead">
+              No todos los productos para controlar plagas son iguales. Usamos formulaciones de bajo impacto ambiental y equipo profesional para eliminar la plaga desde su origen, sin dejar residuos agresivos en tu hogar o negocio.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características del servicio de fumigación ecológica">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+                <div>
+                  <h4>Productos Biodegradables</h4>
+                  <p>Formulaciones de baja toxicidad, pensadas para el cuidado de personas, mascotas y el entorno.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                <div>
+                  <h4>Aplicación Profesional</h4>
+                  <p>Equipo de nebulización y aspersión calibrado para una cobertura uniforme y efectiva.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></div>
+                <div>
+                  <h4>Diagnóstico por Escrito</h4>
+                  <p>Reporte del servicio con hallazgos, tratamiento aplicado y recomendaciones de prevención.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-user-shield"></i></div>
+                <div>
+                  <h4>Personal Capacitado</h4>
+                  <p>Técnicos con protocolos de bioseguridad para tu tranquilidad durante todo el servicio.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Atributos del servicio de fumigación ecológica">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">100%</span>
+                <span class="spec-name">Ecológico</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">3</span>
+                <span class="spec-name">Servicios Integrados</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">6</span>
+                <span class="spec-name">Etapas de Control</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">360°</span>
+                <span class="spec-name">Res. y Comercial</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="topo-photo-frame">
+                <img src="https://images.pexels.com/photos/4920268/pexels-photo-4920268.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                     alt="Persona sosteniendo un atomizador ecológico entre plantas verdes, representando el control de plagas de bajo impacto ambiental">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Fumigación Ecológica — En proceso
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-leaf" style="color:var(--gold);"></i>
+                100% Biodegradable
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Nuestros pilares">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100%">0</div>
+            <div class="stat-lbl">Compromiso con<br>métodos ecológicos</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="3"
+                 aria-label="3">0</div>
+            <div class="stat-lbl">Servicios especializados<br>bajo un mismo equipo</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="6"
+                 aria-label="6">0</div>
+            <div class="stat-lbl">Etapas en nuestro<br>método de control</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="360" data-suffix="°"
+                 aria-label="360 grados">0</div>
+            <div class="stat-lbl">Protección integral<br>para tu espacio</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Sectores</div>
+          <h2 class="section-title" id="sec-heading">
+            Protegemos espacios <span class="gold">de todo tipo</span>
+          </h2>
+          <p>Desde tu hogar hasta instalaciones comerciales e industriales, adaptamos el servicio a las necesidades de cada espacio.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-house sector-icon" aria-hidden="true"></i>
+            <h3>Residencial</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-utensils sector-icon" aria-hidden="true"></i>
+            <h3>Restaurantes y Comercios</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-briefcase sector-icon" aria-hidden="true"></i>
+            <h3>Oficinas y Corporativos</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-industry sector-icon" aria-hidden="true"></i>
+            <h3>Bodegas e Industria</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-school sector-icon" aria-hidden="true"></i>
+            <h3>Escuelas y Centros de Salud</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: FUMIGACIÓN ECOLÓGICA (detalle)
+    ══════════════════════════════════════════════════ -->
+    <section id="fumigacion-detalle" class="servicio srv-alt" aria-labelledby="fum-heading">
+      <div class="container">
+        <div class="servicio-wrap">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="fum-heading">
+              Fumigación<br><span class="gold">Ecológica</span>
+            </h2>
+            <p class="servicio-lead">
+              Control de insectos rastreros y voladores con productos de baja toxicidad, aplicados por personal capacitado:
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de fumigación ecológica">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Control de cucarachas y hormigas</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Eliminación de chinches de cama</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Control de moscas y mosquitos</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Fumigación de áreas comunes y exteriores</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Tratamiento preventivo y correctivo</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Productos biodegradables</li>
+            </ul>
+
+            <a href="#contacto" class="btn-gold">
+              Contáctanos
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="https://images.pexels.com/photos/9390017/pexels-photo-9390017.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                   alt="Dos técnicos de Control Ecológico de Plagas fumigando con equipo de protección">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Control de Insectos
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: DESINFECCIÓN Y SANITIZACIÓN
+    ══════════════════════════════════════════════════ -->
+    <section id="desinfeccion" class="servicio" aria-labelledby="desinf-heading">
+      <div class="container">
+        <div class="servicio-wrap flip">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="desinf-heading">
+              Desinfección <span class="gold">y Sanitización</span>
+            </h2>
+            <p class="servicio-lead">
+              Nebulización y sanitización profesional para espacios que necesitan estar libres de virus, bacterias y hongos:
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de desinfección y sanitización">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Nebulización con equipo especializado</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sanitización de áreas comunes</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Desinfección de oficinas y comercios</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Control de hongos y bacterias</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sanitización post-obra o post-mudanza</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Servicio para restaurantes y cocinas</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Programas periódicos de sanitización</li>
+            </ul>
+
+            <a href="#contacto" class="btn-gold">
+              Contáctanos
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="https://images.pexels.com/photos/4099470/pexels-photo-4099470.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                   alt="Trabajador con equipo de protección desinfectando una cocina comercial">
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-droplet" style="color:var(--gold);"></i>
+                Espacios Sanitizados
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: CONTROL DE FAUNA NOCIVA
+    ══════════════════════════════════════════════════ -->
+    <section id="fauna-nociva" class="servicio srv-alt" aria-labelledby="fauna-heading">
+      <div class="container">
+        <div class="servicio-wrap">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="fauna-heading">
+              Control de <span class="gold">Fauna Nociva</span>
+            </h2>
+            <p class="servicio-lead">
+              Manejo responsable y ético de fauna que representa un riesgo para tu propiedad o tu salud:
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de control de fauna nociva">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Control de roedores</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Manejo de aves urbanas</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Retiro seguro de nidos y madrigueras</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sellado de puntos de acceso</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Estaciones de monitoreo</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Programas de control preventivo</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Seguimiento y evaluación de resultados</li>
+            </ul>
+
+            <p class="srv-note">
+              Priorizamos métodos que evitan sufrimiento innecesario a la fauna y previenen que el problema se repita, en lugar de soluciones agresivas de corto plazo.
+            </p>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="https://images.pexels.com/photos/19789837/pexels-photo-19789837.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                   alt="Técnico de Control Ecológico de Plagas realizando control preventivo en un patio exterior">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Manejo Responsable
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: MANTENIMIENTO COMERCIAL
+    ══════════════════════════════════════════════════ -->
+    <section id="mantenimiento" class="servicio" aria-labelledby="mant-heading">
+      <div class="container">
+        <div class="servicio-wrap flip">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="mant-heading">
+              Mantenimiento <span class="gold">Comercial</span>
+            </h2>
+            <p class="servicio-lead">
+              Programas periódicos para negocios que necesitan mantener su certificación sanitaria y la confianza de sus clientes:
+            </p>
+
+            <ul class="srv-list one-col" aria-label="Servicios de mantenimiento comercial">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Contratos de fumigación y desinfección periódica</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Bitácoras de servicio para auditorías sanitarias</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Atención prioritaria ante brotes o quejas</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Planes a la medida para restaurantes, hoteles e industria</li>
+            </ul>
+
+            <a href="#contacto" class="btn-outline">
+              <i class="fa-solid fa-clipboard-check" style="font-size:15px; color:var(--gray);"></i>
+              Solicita tu plan
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="https://images.pexels.com/photos/12234107/pexels-photo-12234107.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                   alt="Técnico realizando una inspección de rutina con portapapeles en una bodega comercial">
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-repeat" style="color:var(--gold);"></i>
+                Programas Periódicos
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Solicita tu <span class="gold">diagnóstico o cotización</span>
+          </h2>
+          <p>Cuéntanos qué plaga te preocupa o qué servicio necesitas. Te respondemos para agendar tu visita de diagnóstico.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Directa y Personalizada</h3>
+            <p class="ci-sub">Hablas con el equipo que atiende tu servicio, no con un call center.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Cobertura</h4>
+                  <p><!-- TODO: reemplazar con ciudad/estado real -->
+                     Atendemos proyectos en [Ciudad, Estado]<br>
+                     y zonas cercanas.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <!-- TODO: reemplazar con el número real de contacto -->
+                    <a href="tel:+52XXXXXXXXXX">+52 XX XXXX XXXX</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Envíanos fotos o video de la plaga y te orientamos de inmediato.</p>
+                  <!-- TODO: reemplazar con el número real de WhatsApp -->
+                  <a href="https://wa.me/52XXXXXXXXXX" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Juan Pérez" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización integral (Fumigación + Desinfección + Fauna Nociva)</option>
+                    <option>Fumigación Ecológica</option>
+                    <option>Desinfección y Sanitización</option>
+                    <option>Control de Fauna Nociva</option>
+                    <option>Mantenimiento Comercial</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle del servicio</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Cuéntanos qué plaga tienes, el tipo de espacio (casa, oficina, restaurante…) y su tamaño aproximado…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Solicitar Cotización por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación con nuestro equipo técnico.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img class="logo-mark" src="imagenes/logo-control-ecologico-plagas-transparente.png" alt="Logotipo de Control Ecológico de Plagas">
+          </div>
+          <span>Control Ecológico de Plagas</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Control Ecológico de Plagas. Todos los derechos reservados.
+        </p>
+        <div class="footer-socials">
+          <!-- TODO: reemplazar hrefs con las redes sociales reales del negocio -->
+          <a href="#"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- TODO: reemplazar con el número real de WhatsApp -->
+          <a href="https://wa.me/52XXXXXXXXXX" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+       TODO: reemplazar el número 52XXXXXXXXXX con el WhatsApp real del negocio
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20control%20de%20plagas."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
